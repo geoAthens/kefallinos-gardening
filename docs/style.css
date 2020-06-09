@@ -1,0 +1,295 @@
+/* styling reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Mobile Styling */
+
+/* header styling */
+
+* {
+    text-decoration: none;
+}
+
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+
+header .head-logo {
+    font-family: Catamaran;
+    font-size: 20px;
+    font-weight: 900;
+    color: #111;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0 16px;
+}
+
+header nav ul li a {
+    font-family: Catamaran;
+    font-size: 14px;
+    color: #111;
+    text-transform: uppercase;
+}
+
+header .head-prof {
+    display: none;
+}
+
+/* section styling */
+
+.index-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('img/bannerM.JPG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.index-banner h2 {
+    font-family: Catamaran;
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px #111;
+    padding-top: 10px;
+}
+
+.index-banner h1 {
+    font-family: Cormorant Garamond;
+    font-size: 15px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px #111;
+    padding-top: 10px;
+}
+
+.index-links div {
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-color: #f2f2f2;
+}
+
+.index-links div h3 {
+    font-family: Catamaran;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 85px;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+/* footer styling */
+
+footer {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #111;
+    overflow: hidden;
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+}
+
+footer ul li {
+    display: block;
+    list-style: none;
+}
+
+footer ul li a {
+    font-family: Catamaran;
+    font-size: 15px;
+    color: #fff;
+    line-height: 45px;
+}
+
+.social {
+    width: 40px;
+    float: right;
+    display: none;
+}
+
+.social img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* Desktop Styling Adjustments */
+
+@media only screen and (min-width: 1000px) {
+
+    header .head-logo {
+        margin: 31px 0;
+        text-align: left;
+        line-height: 38px;
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #111;
+        float: left;
+    }
+
+    header nav ul {
+        margin: 20px 0px 0px 20px;
+        float: left;
+    }
+    
+    header nav ul li a {
+        line-height: 60px;
+        font-size: 15px;
+    }
+
+    header .head-prof {
+        display: block;
+        font-family: Catamaran;
+        font-size: 15px;
+        color: #111;
+        text-transform: uppercase;
+        line-height: 38px;
+        border: 1px solid #111;
+        float: right;
+        margin-right: 40px;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+    .service{
+        font-size: 20px;
+    }
+
+    .wrapper{
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .index-banner {
+        background-image: url('img/bannerD.PNG');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 800px;
+    }
+
+    .index-banner h2 {
+        font-size: 20px;
+    }
+    
+    .index-banner h1 {
+        font-size: 17px;
+    }
+    
+    .index-links div h3 {
+        font-size: 17px;
+        line-height: 215px;
+    }
+
+    .index-links {
+        overflow: hidden;
+    }
+
+    .index-links div {
+        margin: 20px 10px 0;
+        height: 230px;
+        float: left;
+    }
+
+    .linkRectangle{
+        width: calc(40% - 20px) !important;
+    }
+
+    .linkSquare{
+        width: calc(30% - 20px) !important;
+    }
+
+    footer ul li {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    footer ul li a {
+        font-size: 17px;
+    }
+
+    .social {
+        width: 180px;
+        height: 180px; 
+        float: right;
+        display: unset;
+    }
+
+}
